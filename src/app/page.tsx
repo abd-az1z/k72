@@ -1,6 +1,8 @@
+import Home from "@/modules/Home/Home"
+
 const page = () => {
   return (
-    <div className="text-3xl">page</div>
+    <Home/>
   )
 }
 export default page
