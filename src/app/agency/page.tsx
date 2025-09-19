@@ -1,6 +1,6 @@
+import Agency from "@/modules/Agency/Agency";
+
 const AgencyPage = () => {
-  return (
-    <div>Agency Page</div>
-  )
-}
-export default AgencyPage
+  return <Agency />;
+};
+export default AgencyPage;

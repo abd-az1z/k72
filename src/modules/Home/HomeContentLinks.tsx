@@ -10,7 +10,7 @@ const HomeContentLinks = () => {
         projects
       </Link>
       <Link
-        href="/agents"
+        href="/agency"
         className="text-[5vw] font-semibold hover:border-[#d3fd50] hover:text-[#d3fd50] border-4 rounded-full px-8 pt-5  uppercase "
       >
         agency
