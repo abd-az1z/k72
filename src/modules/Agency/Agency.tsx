@@ -3,20 +3,52 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { url } from "./PhotoUrl";
 import CenterScrollHero from "./CenterScrollHero";
+
+declare global {
+  interface Window {
+    __pageTransitionActive?: boolean;
+  }
+}
 
 const Agency = () => {
   const imgDivRef = useRef<HTMLDivElement | null>(null);
   const imgRef = useRef<HTMLImageElement | null>(null);
+  const titleWrapRef = useRef<HTMLDivElement | null>(null);
+  const titleRef = useRef<HTMLHeadingElement | null>(null);
   gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    const playTitle = () => {
+      if (!titleRef.current) return;
+      gsap.fromTo(
+        titleRef.current,
+        { yPercent: -100 },
+        { yPercent: 0}
+      );
+    };
+    if (
+      typeof window !== "undefined" &&
+      window.__pageTransitionActive
+    ) {
+      const handler = () => {
+        playTitle();
+        window.removeEventListener("page-transition-done", handler);
+      };
+      window.addEventListener("page-transition-done", handler);
+      return () => window.removeEventListener("page-transition-done", handler);
+    }
+
+    // otherwise play immediately
+    playTitle();
+  }, []);
 
   useGSAP(function () {
     gsap.to(imgDivRef.current, {
       scrollTrigger: {
         trigger: imgDivRef.current,
-        // markers: true,
         start: "top 20%",
         end: "top -200%",
         pin: true,
@@ -33,9 +65,13 @@ const Agency = () => {
   });
 
   return (
-    <section>
+    <section 
+      className="bg-black font-[font2]"
+      data-agency-root
+      style={{ transform: "translateY(-100%)" }}
+    >
       {/* image and text */}
-      <div className="section1 bg-white text-black">
+      <div ref={titleWrapRef} className="section1 bg-white text-black">
         {/* background image */}
         <div
           ref={imgDivRef}
@@ -50,7 +86,7 @@ const Agency = () => {
         </div>
         {/* text content */}
         <div className="relative font-[font2]">
-          <div className="pt-[55vh]">
+          <div ref={titleRef} className="pt-[55vh] overflow-hidden">
             <h1 className="text-[20vw] uppercase text-center  leading-[16vw] ">
               Soixan7e <br />
               Douze
@@ -70,7 +106,7 @@ const Agency = () => {
         </div>
       </div>
       {/* grid layout */}
-      <div className="section2 p-10 space-y-16 font-[font2] bg-white text-black ">
+      <div className="section2 p-10 space-y-20 px-20 text-xl font-[font2] bg-white text-black ">
         <div className="grid grid-cols-3 gap-6">
           <div>Expertise</div>
           <div>
@@ -83,21 +119,21 @@ const Agency = () => {
             </ul>
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-6">
-          <div className="w-[80%]">
+        <div className="grid grid-cols-3  gap-6">
+          <div className="w-[90%]">
             <p>
               Nos projets_ naissent dans l’humilité, grandissent dans la
               curiosité et vivent grâce à la créativité sous toutes ses formes.
             </p>
           </div>
-          <div className="w-[80%]">
+          <div className="w-[90%]">
             <p>
               Notre création_ bouillonne dans un environnement où le talent a le
               goût d’exploser. Où on se sent libre d’être la meilleure version
               de soi-même.
             </p>
           </div>
-          <div className="w-[80%]">
+          <div className="w-[60%]">
             <p>
               Notre culture_ c’est l’ouverture aux autres. Point. Tout
               l’équipage participe à bâtir une agence dont on est fiers.
