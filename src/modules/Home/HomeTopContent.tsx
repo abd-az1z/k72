@@ -1,14 +1,9 @@
-import Header from "./Header";
 import HeroFooter from "./HeroFooter";
 import HeroVideo from "./HeroVideo";
 
 const HomeTopContent = () => {
   return (
     <div className="">
-      <div className="fixed top-0 left-0 right-0 z-50">
-        <Header />
-      </div>
-
       <div className="w-full z-10 font-[font2] py-5 h-full flex flex-col">
         <div className="text-[10vw] uppercase leading-[10vw] text-center ">
           Létincelle

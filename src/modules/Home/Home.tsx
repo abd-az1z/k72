@@ -1,9 +1,12 @@
+import Navbar from "@/components/Navigation/Navbar";
 import HeroVideo from "./HeroVideo";
 import HomeContent from "./HomeContent";
 
 const Home = () => {
   return (
     <>
+      <Navbar />
+
       <div className="w-full h-screen fixed">
         <HeroVideo />
       </div>
