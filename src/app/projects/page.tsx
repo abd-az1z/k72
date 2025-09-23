@@ -1,6 +1,6 @@
+import Projects from "@/modules/Projects/Projects";
+
 const ProjectsPage = () => {
-  return (
-    <div>Projects Page</div>
-  )
-}
-export default ProjectsPage
+  return <Projects />;
+};
+export default ProjectsPage;

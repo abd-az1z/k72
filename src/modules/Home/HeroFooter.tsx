@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Timer } from "lucide-react";
 
 const HeroFooter = () => {
   const [timeStr, setTimeStr] = useState<string>("");
@@ -30,7 +29,7 @@ const HeroFooter = () => {
   }, []);
 
   return (
-    <div className="w-full relative flex items-center justify-start">
+    <div className="w-full text-white relative flex items-center justify-start">
       <div className="p-6 w-1/2 text-xl md:text-2xl font-[font2] uppercase">
         {timeStr && city ? (
           <p>

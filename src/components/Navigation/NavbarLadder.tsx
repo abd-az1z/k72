@@ -31,7 +31,6 @@ const NavbarLadder = () => {
       return;
     }
 
-    // closing: reverse the existing timeline if present, otherwise unmount immediately
     if (tlRef.current) {
       const tl = tlRef.current;
       tl.eventCallback("onReverseComplete", () => {
@@ -86,7 +85,7 @@ const NavbarLadder = () => {
   return (
     <div
       id="fullScreenNav"
-      className="fixed inset-0 z-50 bg-black font-[font2] w-full"
+      className="fixed inset-0 z-50 bg-black text-white font-[font2] w-full"
     >
       <div className="h-screen w-full fixed top-0 left-0">
         <div className="h-full w-full flex">
