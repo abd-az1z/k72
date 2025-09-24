@@ -4,8 +4,8 @@ This project is a clone of the K72 agency website (k72.ca), a visually appealing
 
 ## Live Demo
 
-**(Optional: Add a link to your live deployment here)**
-[View Live Demo](https://your-deployment-link.com)
+**()**
+[View Live Demo](https://k72-beta.vercel.app/)
 
 ## Features
 
