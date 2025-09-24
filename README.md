@@ -83,5 +83,5 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Acknowledgments
 
-  * **Original Design:** [K72 Agency](https://k72.ca/) for the inspiration.
-  * **README Template:** [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+- **Original Design:** [K72 Agency](https://k72.ca/) for the inspiration.  
+- **README Template:** [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
