@@ -7,8 +7,8 @@ interface ProjectCardsProps {
 
 const ProjectCards = ({ image1, image2 }: ProjectCardsProps) => {
   return (
-    <div className="flex gap-2 w-full">
-      <div className="w-1/2 group transition-all rounded-none hover:rounded-4xl h-full overflow-hidden relative">
+    <div className="flex flex-col md:flex-row md:gap-2 w-full">
+      <div className="md:w-1/2 w-full group transition-all rounded-none hover:rounded-4xl h-full overflow-hidden relative">
         <Image
           alt="image1"
           src={image1}
@@ -22,7 +22,7 @@ const ProjectCards = ({ image1, image2 }: ProjectCardsProps) => {
           </h2>
         </div>
       </div>
-      <div className="w-1/2 group transition-all rounded-none hover:rounded-4xl h-full overflow-hidden relative">
+      <div className="md:w-1/2 w-full group transition-all rounded-none hover:rounded-4xl h-full overflow-hidden relative">
         <Image
           alt="image1"
           src={image2}

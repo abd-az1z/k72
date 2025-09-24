@@ -23,16 +23,9 @@ const Agency = () => {
   useEffect(() => {
     const playTitle = () => {
       if (!titleRef.current) return;
-      gsap.fromTo(
-        titleRef.current,
-        { yPercent: -100 },
-        { yPercent: 0}
-      );
+      gsap.fromTo(titleRef.current, { yPercent: -100 }, { yPercent: 0 });
     };
-    if (
-      typeof window !== "undefined" &&
-      window.__pageTransitionActive
-    ) {
+    if (typeof window !== "undefined" && window.__pageTransitionActive) {
       const handler = () => {
         playTitle();
         window.removeEventListener("page-transition-done", handler);
@@ -65,17 +58,17 @@ const Agency = () => {
   });
 
   return (
-    <section 
+    <section
       className="bg-black font-[font2]"
       data-agency-root
       style={{ transform: "translateY(-100%)" }}
     >
       {/* image and text */}
-      <div ref={titleWrapRef} className="section1 bg-white text-black">
+      <div ref={titleWrapRef} className="section1 relative bg-white text-black">
         {/* background image */}
         <div
           ref={imgDivRef}
-          className="h-60 w-48 bg-amber-200 overflow-hidden left-100 rounded-3xl top-30 absolute "
+          className="md:h-60 md:w-48 h-30 w-24 bg-amber-200 left-30 overflow-hidden md:left-100 rounded-3xl md:top-30 absolute "
         >
           <img
             ref={imgRef}
@@ -86,14 +79,17 @@ const Agency = () => {
         </div>
         {/* text content */}
         <div className="relative font-[font2]">
-          <div ref={titleRef} className="pt-[55vh] overflow-hidden">
-            <h1 className="text-[20vw] uppercase text-center  leading-[16vw] ">
+          <div
+            ref={titleRef}
+            className="md:pt-[55vh] pt-[30vh] overflow-hidden"
+          >
+            <h1 className="md:text-[20vw] text-[18vw] uppercase text-center leading-[16vw] ">
               Soixan7e <br />
               Douze
             </h1>
           </div>
-          <div className="w-full flex justify-end px-10 items-center ">
-            <p className="text-6xl w-[55vw]">
+          <div className="w-full md:flex justify-end md:px-10 px-2 items-center ">
+            <p className="md:text-6xl text-xl leading-6 md:leading-none pt-30 md:pt-0 md:w-[55vw]">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{""}Notre
               curiosité nourrit notre créativité. On reste humbles et on dit non
               aux gros egos, même le vôtre. Une marque est vivante. Elle a des
@@ -106,8 +102,8 @@ const Agency = () => {
         </div>
       </div>
       {/* grid layout */}
-      <div className="section2 p-10 space-y-20 px-20 text-xl font-[font2] bg-white text-black ">
-        <div className="grid grid-cols-3 gap-6">
+      <div className="section2 md:p-10 space-y-20 p-2 pt-30 md:px-20 md:text-xl font-[font2] bg-white text-black ">
+        <div className="grid md:grid-cols-3 grid-cols-2 gap-6">
           <div>Expertise</div>
           <div>
             <ul>
@@ -119,7 +115,7 @@ const Agency = () => {
             </ul>
           </div>
         </div>
-        <div className="grid grid-cols-3  gap-6">
+        <div className="md:grid md:grid-cols-3 md:gap-6 space-y-6">
           <div className="w-[90%]">
             <p>
               Nos projets_ naissent dans l’humilité, grandissent dans la
@@ -142,7 +138,7 @@ const Agency = () => {
         </div>
       </div>
       {/* center scroll hero animation */}
-      <CenterScrollHero />
+      {/* <CenterScrollHero /> */}
     </section>
   );
 };
