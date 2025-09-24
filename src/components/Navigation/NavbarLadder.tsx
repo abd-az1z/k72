@@ -87,6 +87,7 @@ const NavbarLadder = () => {
       id="fullScreenNav"
       className="fixed inset-0 z-50 bg-black text-white font-[font2] w-full"
     >
+      {/* animation */}
       <div className="h-screen w-full fixed top-0 left-0">
         <div className="h-full w-full flex">
           <div className="stairRing h-full w-1/5  "></div>
@@ -122,14 +123,14 @@ const NavbarLadder = () => {
             <div className="h-24 right-0 rotate-48 origin-top w-[1px] absolute group-hover:bg-[#d2fd50] bg-white"></div>
           </div>
         </div>
-        <div id="all-links" className="">
+        <div id="all-links" className="w-full h-screen absolute top-[20vh] md:top-[35vh] ">
           {/* PROJECTS */}
           <div className="link origin-top border-t-1 relative ">
-            <h1 className="text-8xl uppercase text-center pt-4">Projects</h1>
+            <h1 className="md:text-8xl text-6xl uppercase text-center pt-4">Projects</h1>
             <div className="moveLink absolute flex top-0 text-black bg-[#d2fd50] overflow-hidden w-full">
               {/* hover effect */}
               <div className="moveX inline-flex gap-5 items-center whitespace-nowrap">
-                <h2 className="text-8xl uppercase text-center pt-4 whitespace-nowrap ">
+                <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
                   POUR tOUT VOIR
                 </h2>
                 <div className="relative w-60 h-22 rounded-full overflow-hidden">
@@ -140,7 +141,7 @@ const NavbarLadder = () => {
                     className="object-cover"
                   />
                 </div>
-                <h2 className="text-8xl uppercase text-center pt-4 whitespace-nowrap ">
+                <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
                   POUR tOUT VOIR
                 </h2>
                 <div className="relative w-60 h-22 rounded-full overflow-hidden">
@@ -153,7 +154,7 @@ const NavbarLadder = () => {
                 </div>
               </div>
               <div className="moveX inline-flex gap-5 items-center whitespace-nowrap">
-                <h2 className="text-8xl uppercase text-center pt-4 whitespace-nowrap ">
+                <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
                   POUR tOUT VOIR
                 </h2>
                 <div className="relative w-60 h-22 rounded-full overflow-hidden">
@@ -164,7 +165,7 @@ const NavbarLadder = () => {
                     className="object-cover"
                   />
                 </div>
-                <h2 className="text-8xl uppercase text-center pt-4 whitespace-nowrap ">
+                <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
                   POUR tOUT VOIR
                 </h2>
                 <div className="relative w-60 h-22 rounded-full overflow-hidden">
@@ -180,11 +181,11 @@ const NavbarLadder = () => {
           </div>
           {/* AGENCY  */}
           <div className="link origin-top border-t-1 relative ">
-            <h1 className="text-8xl uppercase text-center pt-4">agency</h1>
+            <h1 className="md:text-8xl text-6xl uppercase text-center pt-4">agency</h1>
             <div className="moveLink absolute flex top-0 text-black bg-[#d2fd50] overflow-hidden w-full">
               {/* hover effect */}
               <div className="moveX inline-flex gap-5 items-center whitespace-nowrap">
-                <h2 className="text-8xl uppercase text-center pt-4 whitespace-nowrap ">
+                <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
                   Pour tout savoir
                 </h2>
                 <div className="relative w-60 h-22 rounded-full overflow-hidden">
@@ -195,7 +196,7 @@ const NavbarLadder = () => {
                     className="object-cover"
                   />
                 </div>
-                <h2 className="text-8xl uppercase text-center pt-4 whitespace-nowrap ">
+                <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
                   Pour tout savoir
                 </h2>
                 <div className="relative w-60 h-22 rounded-full overflow-hidden">
@@ -208,7 +209,7 @@ const NavbarLadder = () => {
                 </div>
               </div>
               <div className="moveX inline-flex gap-5 items-center whitespace-nowrap">
-                <h2 className="text-8xl uppercase text-center pt-4 whitespace-nowrap ">
+                <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
                   Pour tout savoir
                 </h2>
                 <div className="relative w-60 h-22 rounded-full overflow-hidden">
@@ -219,7 +220,7 @@ const NavbarLadder = () => {
                     className="object-cover"
                   />
                 </div>
-                <h2 className="text-8xl uppercase text-center pt-4 whitespace-nowrap ">
+                <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
                   Pour tout savoir
                 </h2>
                 <div className="relative w-60 h-22 rounded-full overflow-hidden">
@@ -235,17 +236,17 @@ const NavbarLadder = () => {
           </div>
           {/* contact  */}
           <div className="link origin-top border-t-1 relative ">
-            <h1 className="text-8xl uppercase text-center pt-4">contact</h1>
+            <h1 className="md:text-8xl text-6xl uppercase text-center pt-4">contact</h1>
             <div className="moveLink absolute flex top-0 text-black bg-[#d2fd50] overflow-hidden w-full">
               {/* hover effect */}
               <div className="moveX inline-flex gap-5 items-center whitespace-nowrap">
-                <h2 className="text-8xl uppercase text-center pt-4 whitespace-nowrap ">
+                <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
                   Pour envoyer un fax
                 </h2>
                 <div className="relative w-30 h-22 rounded-full overflow-hidden">
                   <Heart className="w-full text-white h-full object-center" />
                 </div>
-                <h2 className="text-8xl uppercase text-center pt-4 whitespace-nowrap ">
+                <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
                   Pour envoyer un fax
                 </h2>
                 <div className="relative w-30 h-22 rounded-full overflow-hidden">
@@ -253,13 +254,13 @@ const NavbarLadder = () => {
                 </div>
               </div>
               <div className="moveX inline-flex gap-5 items-center whitespace-nowrap">
-                <h2 className="text-8xl uppercase text-center pt-4 whitespace-nowrap ">
+                <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
                   Pour envoyer un fax
                 </h2>
                 <div className="relative w-30 h-22 rounded-full overflow-hidden">
                   <Heart className="w-full text-white h-full object-center" />
                 </div>
-                <h2 className="text-8xl uppercase text-center pt-4 whitespace-nowrap ">
+                <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
                   Pour envoyer un fax
                 </h2>
                 <div className="relative w-30 h-22 rounded-full overflow-hidden">
@@ -270,7 +271,7 @@ const NavbarLadder = () => {
           </div>
           {/* blogs */}
           <div className="link origin-top border-t-1 relative border-b-1">
-            <h1 className="text-8xl uppercase text-center pt-4">blogs</h1>
+            <h1 className="md:text-8xl text-6xl uppercase text-center pt-4">blogs</h1>
             <div className="moveLink absolute flex top-0 text-black bg-[#d2fd50] overflow-hidden w-full">
               {/* hover effect */}
               <div className="moveX inline-flex gap-5 items-center whitespace-nowrap">

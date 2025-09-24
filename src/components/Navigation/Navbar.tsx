@@ -8,7 +8,7 @@ const Navbar = () => {
   const { toggle, isOpen } = useNav();
 
   return (
-    <div className="flex z-4  text-black fixed top-0 w-full items-start justify-between">
+    <div className="flex z-4 text-black fixed top-0 w-full items-start justify-between">
       <div className="p-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
