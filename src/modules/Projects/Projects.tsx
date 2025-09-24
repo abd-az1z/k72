@@ -59,16 +59,16 @@ const Projects = () => {
   });
 
   return (
-    <div className="mt-[10vh]  text-black w-full h-screen font-[font2]  ">
-      <div className="p-4">
+    <div className="md:mt-[10vh] pt-[50vh] text-black w-full h-screen font-[font2]  ">
+      <div className="md:p-4">
         <div className="pt-[10vw] ">
-          <h2 className="uppercase  text-[13vw]">Projects</h2>
+          <h2 className="uppercase text-7xl md:text-[13vw]">Projects</h2>
         </div>
-        <div className="heroParent -mt-16">
+        <div className="heroParent">
           {projectImages.map(function (elem, index) {
             return (
               <div
-                className="heroCards w-full h-96 mb-2 flex gap-2 "
+                className="heroCards w-full md:h-96 h-[70vh] mb-2 flex md:gap-2 gap-16 "
                 key={index}
               >
                 <ProjectCards image1={elem.img1} image2={elem.img2} />
