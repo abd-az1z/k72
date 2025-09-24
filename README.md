@@ -15,7 +15,7 @@ This project is a clone of the K72 agency website (k72.ca), a visually appealing
 
 ## Technologies Used
 
-* **Framework:** [Next.js](https://nextjs.org/) 14
+* **Framework:** [Next.js](https://nextjs.org/) 15
 * **Language:** [TypeScript](https://www.typescriptlang.org/)
 * **Styling:** [Tailwind CSS](https://tailwindcss.com/)
 * **Animations:** [Framer Motion](https://www.framer.com/motion/) (or specify other libraries used)
