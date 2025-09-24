@@ -31,12 +31,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <NavProvider>
-          <Navbar />
-          <NavbarLadder />
-          {children}
-          <PageTransition />
-        </NavProvider>
+        <div className="overflow-x-hidden">
+          <NavProvider>
+            <Navbar />
+            <NavbarLadder />
+            {children}
+            <PageTransition />
+          </NavProvider>
+        </div>
       </body>
     </html>
   );
