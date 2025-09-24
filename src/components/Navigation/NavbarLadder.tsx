@@ -7,6 +7,7 @@ import { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 type GSAPTimeline = ReturnType<typeof gsap.timeline>;
 import { useNav } from "@/context/NavContext";
+import Link from "next/link";
 
 const NavbarLadder = () => {
   const fullNavRef = useRef(null);
@@ -123,120 +124,133 @@ const NavbarLadder = () => {
             <div className="h-24 right-0 rotate-48 origin-top w-[1px] absolute group-hover:bg-[#d2fd50] bg-white"></div>
           </div>
         </div>
-        <div id="all-links" className="w-full h-screen absolute top-[20vh] md:top-[35vh] ">
+        <div
+          id="all-links"
+          className="w-full h-screen absolute top-[20vh] md:top-[35vh] "
+        >
           {/* PROJECTS */}
-          <div className="link origin-top border-t-1 relative ">
-            <h1 className="md:text-8xl text-6xl uppercase text-center pt-4">Projects</h1>
-            <div className="moveLink absolute flex top-0 text-black bg-[#d2fd50] overflow-hidden w-full">
-              {/* hover effect */}
-              <div className="moveX inline-flex gap-5 items-center whitespace-nowrap">
-                <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
-                  POUR tOUT VOIR
-                </h2>
-                <div className="relative w-60 h-22 rounded-full overflow-hidden">
-                  <Image
-                    alt="image1"
-                    src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg"
-                    fill
-                    className="object-cover"
-                  />
+          <Link href="/projects">
+            <div className="link origin-top border-t-1 relative ">
+              <h1 className="md:text-8xl text-6xl uppercase text-center pt-4">
+                Projects
+              </h1>
+              <div className="moveLink absolute flex top-0 text-black bg-[#d2fd50] overflow-hidden w-full">
+                {/* hover effect */}
+                <div className="moveX inline-flex gap-5 items-center whitespace-nowrap">
+                  <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
+                    POUR tOUT VOIR
+                  </h2>
+                  <div className="relative w-60 h-22 rounded-full overflow-hidden">
+                    <Image
+                      alt="image1"
+                      src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
+                    POUR tOUT VOIR
+                  </h2>
+                  <div className="relative w-60 h-22 rounded-full overflow-hidden">
+                    <Image
+                      alt="image1"
+                      src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
-                <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
-                  POUR tOUT VOIR
-                </h2>
-                <div className="relative w-60 h-22 rounded-full overflow-hidden">
-                  <Image
-                    alt="image1"
-                    src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-              <div className="moveX inline-flex gap-5 items-center whitespace-nowrap">
-                <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
-                  POUR tOUT VOIR
-                </h2>
-                <div className="relative w-60 h-22 rounded-full overflow-hidden">
-                  <Image
-                    alt="image1"
-                    src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
-                  POUR tOUT VOIR
-                </h2>
-                <div className="relative w-60 h-22 rounded-full overflow-hidden">
-                  <Image
-                    alt="image1"
-                    src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg"
-                    fill
-                    className="object-cover"
-                  />
+                <div className="moveX inline-flex gap-5 items-center whitespace-nowrap">
+                  <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
+                    POUR tOUT VOIR
+                  </h2>
+                  <div className="relative w-60 h-22 rounded-full overflow-hidden">
+                    <Image
+                      alt="image1"
+                      src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
+                    POUR tOUT VOIR
+                  </h2>
+                  <div className="relative w-60 h-22 rounded-full overflow-hidden">
+                    <Image
+                      alt="image1"
+                      src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
           {/* AGENCY  */}
-          <div className="link origin-top border-t-1 relative ">
-            <h1 className="md:text-8xl text-6xl uppercase text-center pt-4">agency</h1>
-            <div className="moveLink absolute flex top-0 text-black bg-[#d2fd50] overflow-hidden w-full">
-              {/* hover effect */}
-              <div className="moveX inline-flex gap-5 items-center whitespace-nowrap">
-                <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
-                  Pour tout savoir
-                </h2>
-                <div className="relative w-60 h-22 rounded-full overflow-hidden">
-                  <Image
-                    alt="image1"
-                    src="https://k72.ca/uploads/teamMembers/Claire_640X290-640x290.jpg"
-                    fill
-                    className="object-cover"
-                  />
+          <Link href="/agency">
+            <div className="link origin-top border-t-1 relative ">
+              <h1 className="md:text-8xl text-6xl uppercase text-center pt-4">
+                agency
+              </h1>
+              <div className="moveLink absolute flex top-0 text-black bg-[#d2fd50] overflow-hidden w-full">
+                {/* hover effect */}
+                <div className="moveX inline-flex gap-5 items-center whitespace-nowrap">
+                  <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
+                    Pour tout savoir
+                  </h2>
+                  <div className="relative w-60 h-22 rounded-full overflow-hidden">
+                    <Image
+                      alt="image1"
+                      src="https://k72.ca/uploads/teamMembers/Claire_640X290-640x290.jpg"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
+                    Pour tout savoir
+                  </h2>
+                  <div className="relative w-60 h-22 rounded-full overflow-hidden">
+                    <Image
+                      alt="image1"
+                      src="https://k72.ca/uploads/teamMembers/MEGGIE_640X290_2-640x290.jpg"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
-                <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
-                  Pour tout savoir
-                </h2>
-                <div className="relative w-60 h-22 rounded-full overflow-hidden">
-                  <Image
-                    alt="image1"
-                    src="https://k72.ca/uploads/teamMembers/MEGGIE_640X290_2-640x290.jpg"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-              <div className="moveX inline-flex gap-5 items-center whitespace-nowrap">
-                <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
-                  Pour tout savoir
-                </h2>
-                <div className="relative w-60 h-22 rounded-full overflow-hidden">
-                  <Image
-                    alt="image1"
-                    src="https://k72.ca/uploads/teamMembers/Claire_640X290-640x290.jpg"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
-                  Pour tout savoir
-                </h2>
-                <div className="relative w-60 h-22 rounded-full overflow-hidden">
-                  <Image
-                    alt="image1"
-                    src="https://k72.ca/uploads/teamMembers/MEGGIE_640X290_2-640x290.jpg"
-                    fill
-                    className="object-cover"
-                  />
+                <div className="moveX inline-flex gap-5 items-center whitespace-nowrap">
+                  <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
+                    Pour tout savoir
+                  </h2>
+                  <div className="relative w-60 h-22 rounded-full overflow-hidden">
+                    <Image
+                      alt="image1"
+                      src="https://k72.ca/uploads/teamMembers/Claire_640X290-640x290.jpg"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <h2 className="md:text-8xl text-6xl uppercase text-center pt-4 whitespace-nowrap ">
+                    Pour tout savoir
+                  </h2>
+                  <div className="relative w-60 h-22 rounded-full overflow-hidden">
+                    <Image
+                      alt="image1"
+                      src="https://k72.ca/uploads/teamMembers/MEGGIE_640X290_2-640x290.jpg"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
           {/* contact  */}
           <div className="link origin-top border-t-1 relative ">
-            <h1 className="md:text-8xl text-6xl uppercase text-center pt-4">contact</h1>
+            <h1 className="md:text-8xl text-6xl uppercase text-center pt-4">
+              contact
+            </h1>
             <div className="moveLink absolute flex top-0 text-black bg-[#d2fd50] overflow-hidden w-full">
               {/* hover effect */}
               <div className="moveX inline-flex gap-5 items-center whitespace-nowrap">
@@ -271,7 +285,9 @@ const NavbarLadder = () => {
           </div>
           {/* blogs */}
           <div className="link origin-top border-t-1 relative border-b-1">
-            <h1 className="md:text-8xl text-6xl uppercase text-center pt-4">blogs</h1>
+            <h1 className="md:text-8xl text-6xl uppercase text-center pt-4">
+              blogs
+            </h1>
             <div className="moveLink absolute flex top-0 text-black bg-[#d2fd50] overflow-hidden w-full">
               {/* hover effect */}
               <div className="moveX inline-flex gap-5 items-center whitespace-nowrap">

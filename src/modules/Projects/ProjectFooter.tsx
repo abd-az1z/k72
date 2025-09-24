@@ -27,7 +27,7 @@ const ProjectFooter = () => {
     return () => clearInterval(id);
   }, []);
   return (
-    <div className=" md:p-4 p-2 flex flex-col items-center justify-between w-full md:h-[65vh] h-[75vh] bg-black text-white">
+    <div className=" md:p-4 md:mt[10vw]  p-2 flex flex-col items-center justify-between w-full md:h-[65vh] h-[75vh] bg-black text-white">
       <div className="flex flex-col md:flex-row gap-32 md:justify-between w-full">
         <div className="flex uppercase md:text-6xl gap-2 font-medium text-xl items-center md:justify-between">
           <h2 className="md:px-6 p-2 md:pt-3 hover:text-[#d2fd50] md:leading-10 leading-1 pt-3 rounded-full border-2 ">

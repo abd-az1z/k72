@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# K72 Website Clone
+
+This project is a clone of the K72 agency website (k72.ca), a visually appealing and interactive portfolio website. This clone is built using modern web technologies to replicate the original's sleek design and smooth animations.
+
+## Live Demo
+
+**[View Live Demo](https://k72-beta.vercel.app/)**
+
+## Features
+
+* **Faithful Replication:** A pixel-perfect reproduction of the K72 website's design, focusing on animations, typography, and layout.
+* **Interactive Elements:** Includes interactive components such as hover effects, animated transitions, and a seamless user experience.
+* **Responsive Design:** The website is fully responsive and optimized for all screen sizes, from mobile phones to widescreen desktops.
+* **Modern Tech Stack:** Built with a robust and scalable architecture using Next.js 14 and TypeScript.
+
+## Technologies Used
+
+* **Framework:** [Next.js](https://nextjs.org/) 15
+* **Language:** [TypeScript](https://www.typescriptlang.org/)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Animations:** [Framer Motion](https://www.framer.com/motion/) (or specify other libraries used)
+* **Deployment:** [Vercel](https://vercel.com/)
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running, follow these simple steps.
 
-```bash
+### Prerequisites
+
+Make sure you have Node.js (version 18.x or later) and npm (or yarn/pnpm) installed on your machine.
+
+* **Node.js**
+    ```sh
+    [https://nodejs.org/](https://nodejs.org/)
+    ```
+
+### Installation
+
+1.  **Clone the repository:**
+    ```sh
+    git clone [https://github.com/abd-az1z/k72.git](https://github.com/abd-az1z/k72.git)
+    ```
+2.  **Navigate to the project directory:**
+    ```sh
+    cd k72
+    ```
+3.  **Install dependencies:**
+    ```sh
+    npm install
+    # or
+    # yarn install
+    # or
+    # pnpm install
+    ```
+
+### Running the Development Server
+
+Run the development server with this command:
+
+```sh
 npm run dev
 # or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# yarn dev
+````
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](https://www.google.com/search?q=http://localhost:3000) with your browser to see the result. You can start editing the page by modifying `src/app/page.tsx`. The page auto-updates as you edit the file.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contributing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-## Learn More
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 
-To learn more about Next.js, take a look at the following resources:
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-## Deploy on Vercel
+## Acknowledgments
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+  * **Original Design:** [K72 Agency](https://k72.ca/) for the inspiration.
+  * **README Template:** [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
